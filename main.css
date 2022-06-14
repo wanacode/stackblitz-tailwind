@@ -1,3 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  @apply p-5;
+}
+
+.more {
+  @apply flex items-center hover:opacity-70 transition-opacity;
+}
+
+.more:after {
+  @apply transition transform w-4 h-4 ml-2;
+  content: url('data:image/svg+xml; utf8, <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15.15 8a.61.61 0 0 1-.18.47L8.47 15a.66.66 0 0 1-.47.17.68.68 0 0 1-.47-.17.63.63 0 0 1 0-.94l5.41-5.39H1.5a.68.68 0 0 1-.5-.18A.64.64 0 0 1 .85 8 .63.63 0 0 1 1 7.55a.64.64 0 0 1 .47-.18h11.47L7.53 2a.665.665 0 1 1 .94-.94l6.5 6.5a.6.6 0 0 1 .18.44z" fill="black"/></svg>');
+}
+
+.more:hover:after {
+  @apply translate-x-1;
+}
