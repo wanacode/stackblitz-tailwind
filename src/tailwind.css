@@ -517,3 +517,14 @@ video {
   font-size: 2.25rem;
   line-height: 2.5rem;
 }
+.font-bold {
+  font-weight: 700;
+}
+.text-slate-100 {
+  --tw-text-opacity: 1;
+  color: rgb(241 245 249 / var(--tw-text-opacity));
+}
+.text-slate-900 {
+  --tw-text-opacity: 1;
+  color: rgb(15 23 42 / var(--tw-text-opacity));
+}

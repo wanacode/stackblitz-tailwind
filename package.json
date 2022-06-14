@@ -2,8 +2,8 @@
   "name": "node-starter",
   "version": "0.0.0",
   "scripts": {
-    "start": "light-server -c light-server.config.json",
-    "dev": "postcss main.css --output src/tailwind.css --watch"
+    "dev": "light-server -c light-server.config.json",
+    "tailwind": "postcss main.css --output src/tailwind.css --watch"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.7",
@@ -13,6 +13,7 @@
     "tailwindcss": "^3.1.2"
   },
   "dependencies": {
+    "http-server": "^14.1.1",
     "light-server": "^2.9.1"
   }
 }
